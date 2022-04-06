@@ -1,0 +1,33 @@
+import java.util.*;
+public class palindrome
+{
+public static void main(String args[])
+
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter a word");
+String str=sc.nextLine();
+int size=str.length();
+boolean isPalindrome =true;
+for(int i=0;i<size/2;i++)
+{
+if(str.charAt(i)==str.charAt(size-i-1))
+{
+continue;
+}
+else
+{
+isPalindrome=false;
+break;
+}
+}
+if(isPalindrome)
+{
+System.out.println("the string "+str+" is palindrome");
+}
+else
+{
+System.out.println("the string "+str+" is not a palindrome");
+}
+}
+}

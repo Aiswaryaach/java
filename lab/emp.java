@@ -1,26 +1,41 @@
-import java.util.*;  
-public class emp {
-    String ID;
-    String name;
-    int salary;
+class employee {
+    int eNo;
+    String eName;
+    int eSalary;
 
     public void read(){
         Scanner sc= new Scanner(System.in);
         System.out.print("Enter ID : "); 
-        ID = sc.nextLine();
+        eNo = Integer.parseInt(sc.nextLine());
         System.out.print("Enter Name : "); 
-        name = sc.nextLine();
+        eName = sc.nextLine();
         System.out.print("Enter monthly salary : "); 
-        salary = sc.nextInt();
+        eSalary = Integer.parseInt(sc.nextLine());
     }
 
     public void display(){
-        System.out.println("Year salary is : "+ salary*12);
+        System.out.println("Name : "+ eName );
     }
     public static void main(String []args){
-        employee emp_1 = new employee();
-        emp_1.read();
-        emp_1.display();
+        int i,n=3;
+        int No;
+        employee emp[] = new employee[n];
+        for(i=0;i<n;i++){
+            emp[i] = new employee();
+            emp[i].read();
+        }
+        System.out.println("Search"); 
+        while(true){
+            Scanner sc= new Scanner(System.in);
+            System.out.print("Enter ID : "); 
+            No = Integer.parseInt(sc.nextLine());
+            for(i=0;i<n;i++){
+                if(emp[i].eNo == No){
+                    emp[i].display();
+                    break;
+                }
+            }
+        }
 
     }
 }

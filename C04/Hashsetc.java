@@ -26,6 +26,12 @@ for(i=1;i <= n;i++)
 hs2.add(sc1.nextInt());
 }
 System.out.println("second hash set:" +hs2);
+System.out.println("first hashset is equal to second hashset:   " +hs1.equals(hs2));
+
+//remove
+hs2.remove(2);
+System.out.println("second hashset after removing an element:  " +hs2);
+System.out.println("first hashset is equal to second hashset:   " +hs1.equals(hs2));
 
 
 

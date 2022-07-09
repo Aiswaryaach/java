@@ -15,5 +15,9 @@ for(i=1;i <= n;i++)
 dq.add(sc.next());
 }
 System.out.println("Strings are:\n" +dq);
+  System.out.println("Pop():" +dq.pop());
+System.out.println("Poll():" +dq.poll());
+System.out.println("PollFirst():" +dq.pollFirst());
+System.out.println("PollLast()" +dq.pollLast());
 }
 }

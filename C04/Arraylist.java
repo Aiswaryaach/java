@@ -12,22 +12,18 @@ for(i=1;i <= n;i++)
 data.add(sc.next());
 }
 
-System.out.println("strings are:\n" +data);  
-
-System.out.println("Size of the string \n" +data.size());
-
+System.out.println("List are:\n" +data); 
 System.out.println("Returning element:  " +data.get(1));
 
-data.remove(0);
-System.out.println("removing string\n" +data);
+System.out.println("List after insertion of :" +data.set(1,"newly inserted");
+for(String word:data)
+                   System.out.println(word);
 
-System.out.println("after removing string:   \n" +data.get(0));
-System.out.println(data.get(1));
+Collections.sort(data);
+System.out.println("\nSorted list:");
 
-
-
-data.clear();
-        System.out.println("clear " +data);
+for(String word:data)
+        System.out.println(word);
 
 
            
